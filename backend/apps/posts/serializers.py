@@ -1,7 +1,7 @@
 ﻿from rest_framework import serializers
 
-from posts.models import Post, PostTarget
-from social.models import SocialAccount
+from apps.posts.models import Post, PostTarget
+from apps.integrations.models import SocialAccount
 
 
 class DraftPostSerializer(serializers.Serializer):

@@ -1,7 +1,7 @@
 ﻿from django.contrib.auth import get_user_model
 from django.test import TestCase
 
-from capabilities.service import (
+from apps.capabilities.services.availability_service import (
     REASON_IG_PERMS_MISSING,
     REASON_IG_PRO_REQUIRED,
     REASON_TIKTOK_PREREQS,
@@ -9,7 +9,7 @@ from capabilities.service import (
     REASON_YT_VIDEO_ONLY,
     evaluate_availability,
 )
-from social.models import Platform, SocialAccount
+from apps.integrations.models import Platform, SocialAccount
 
 
 class CapabilityServiceTests(TestCase):

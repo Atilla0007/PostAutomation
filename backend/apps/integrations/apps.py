@@ -1,6 +1,6 @@
 ﻿from django.apps import AppConfig
 
 
-class SocialConfig(AppConfig):
+class IntegrationsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'social'
+    name = 'apps.integrations'

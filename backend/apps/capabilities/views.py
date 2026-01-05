@@ -5,9 +5,9 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from capabilities.service import evaluate_availability
-from posts.models import Post
-from posts.serializers import DraftPostSerializer
+from apps.capabilities.services.availability_service import evaluate_availability
+from apps.posts.models import Post
+from apps.posts.serializers import DraftPostSerializer
 
 
 class CapabilitiesView(APIView):

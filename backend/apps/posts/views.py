@@ -5,10 +5,10 @@ from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from capabilities.service import evaluate_availability
-from posts.models import Post, PostTarget
-from posts.serializers import PostSerializer
-from posts.tasks import publish_target
+from apps.capabilities.services.availability_service import evaluate_availability
+from apps.posts.models import Post, PostTarget
+from apps.posts.serializers import PostSerializer
+from apps.posts.tasks import publish_target
 
 
 class PostViewSet(viewsets.ModelViewSet):

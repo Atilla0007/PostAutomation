@@ -1,7 +1,7 @@
 ﻿from dataclasses import dataclass
 from typing import List, Optional
 
-from social.models import Platform, SocialAccount
+from apps.integrations.models import Platform, SocialAccount
 
 
 @dataclass
