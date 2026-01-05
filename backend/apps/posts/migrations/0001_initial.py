@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('social', '0001_initial'),
+        ('integrations', '0001_initial'),
     ]
 
     operations = [
@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('last_error', models.TextField(blank=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='targets', to='posts.post')),
-                ('social_account', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='social.socialaccount')),
+                ('social_account', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='integrations.socialaccount')),
             ],
             options={
                 'unique_together': {('post', 'social_account')},
