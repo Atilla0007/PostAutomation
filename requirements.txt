@@ -1,0 +1,4 @@
+﻿Django>=4.2,<5.0
+djangorestframework>=3.14,<4.0
+celery>=5.3,<6.0
+django-cors-headers>=4.3.0
